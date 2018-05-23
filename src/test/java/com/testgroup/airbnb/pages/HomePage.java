@@ -39,6 +39,7 @@ public class HomePage extends PageObject {
 	WebElementFacade btnApply;
 
 	public void searchItem(String searchText) {
+		waitFor(searchBox);		
         searchBox.sendKeys(searchText);
         searchBox.sendKeys(Keys.RETURN);
     }

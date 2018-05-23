@@ -38,7 +38,7 @@ public class SmokeTestSteps extends ScenarioSteps  {
 	}
 
 	@Given("^I type \"([^\"]*)\" and presses Enter$")
-	public void i_type_and_presses_Enter(String searchText) throws Throwable {
+	public void i_type_and_presses_Enter(String searchText) throws Throwable {		
 		homePage.searchItem(searchText);
 	}
 
