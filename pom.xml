@@ -92,7 +92,8 @@
                 <version>2.21.0</version>
                 <configuration>
                     <includes>                        
-                        <include>**/TestRunner_kqed.java</include>                                                   
+                        <include>**/TestRunner_kqed.java</include>  
+                        <include>**/TestRunner_AirBnB.java</include>                                                   
                     </includes>
                 </configuration>
                 <executions>
