@@ -1,5 +1,6 @@
 package com.testgroup.airbnb.pages;
 
+import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalUnit;
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +25,7 @@ import net.thucydides.core.pages.PageObject;
 public class HomePage extends PageObject {
 	@BeforeClass
 	public void setup(){
-		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		this.setImplicitTimeout(10, ChronoUnit.SECONDS);
 		
 	}
 
