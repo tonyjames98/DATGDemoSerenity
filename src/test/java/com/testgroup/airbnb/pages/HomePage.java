@@ -1,11 +1,16 @@
 package com.testgroup.airbnb.pages;
 
+import java.time.temporal.TemporalUnit;
+import java.util.concurrent.TimeUnit;
+
 import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -17,6 +22,11 @@ import net.thucydides.core.pages.PageObject;
 
 @DefaultUrl("https://airbnb.com")
 public class HomePage extends PageObject {
+	@BeforeClass
+	public void setup(){
+		getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+	}
 
 	@FindBy(xpath = "//*[contains(@id, 'GeocompleteController')]")
 	WebElementFacade searchBox;
