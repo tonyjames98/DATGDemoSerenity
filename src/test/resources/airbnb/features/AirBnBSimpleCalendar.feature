@@ -10,7 +10,6 @@ Feature: Simple ReactJS AirBnB
 		And I click on the calendar button
 		And I click on "<calendarDate>"
 		And I click on apply		
-		Then I close the application
 		
 		Examples:
        | locationName | calendarDate |
