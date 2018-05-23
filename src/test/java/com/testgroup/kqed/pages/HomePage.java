@@ -21,6 +21,10 @@ public class HomePage extends PageObject {
     @FindBy(xpath = "//a[text()=\"News\"][contains(@class, \"DropdownDesktop\")]")
     WebElementFacade newsSection;
 
+    @FindBy(xpath = "//a[text()=\"Radio\"][contains(@class, \"DropdownDesktop\")]")
+    WebElementFacade radioSection;
+
+  
     public boolean isPageLoaded() {
         return navTitle.getText().equalsIgnoreCase("home");
     }
@@ -33,4 +37,5 @@ public class HomePage extends PageObject {
         navDropDown.click();
         newsSection.click();
     }
+ 
 }

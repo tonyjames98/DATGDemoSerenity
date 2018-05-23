@@ -94,6 +94,7 @@
 				<configuration>
 					<includes>
 						<include>**/TestRunner_kqed.java</include>
+						
 					</includes>
 				</configuration>
 				<executions>
