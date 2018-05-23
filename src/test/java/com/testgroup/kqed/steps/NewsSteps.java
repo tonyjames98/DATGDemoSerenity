@@ -19,8 +19,8 @@ public class NewsSteps extends ScenarioSteps {
         newsPage.clickTopArticle();
     }
 
-    @Then("^I see an article published today$")
-    public void iSeeAnArticlePublishedToday() {
-        assertThat(newsArticlePage.getArticlePublishDate()).isEqualToIgnoringCase("May 23");
+    @Then("^I see an article published this month$")
+    public void iSeeAnArticlePublishedThisMonth() {        
+        assertThat(newsArticlePage.getArticlePublishDate()).contains("May");
     }
 }

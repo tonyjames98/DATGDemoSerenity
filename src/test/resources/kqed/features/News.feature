@@ -8,4 +8,4 @@ Feature: News
     Given I am on the KQED website
     When I go to the News section
     And I select the latest news item
-    Then I see an article published today
+    Then I see an article published this month
